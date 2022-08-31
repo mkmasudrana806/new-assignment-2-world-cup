@@ -123,22 +123,23 @@ border-radius: 10px;
     justify-content: space-between;
 }
 /*---------------------------------------
-                         view all button
+            view all button
 -----------------------------------------*/
 .view-all-button{
     display: flex;
     justify-content: center;
     margin-bottom: 70px;
-    display: none;
+    /* display: none; */
 }
-.view-all-button div{
+.view-all-button a{
 width: 135px;
 background: #DD0000;
-padding:2px 25px;
+padding:20px 50px;
 border-radius: 5px;
+text-decoration: none;
 text-align: center;
 color: white;
-font-size: 15px;
+font-size: 20px;
 }
 /* -------------------------------------------------
                   footer section 
