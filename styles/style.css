@@ -69,7 +69,7 @@ width: 100%;
 .upcomming-match{
     background-color: black;
     margin-right: 20px;
-    width: 35%;
+    width: 400px;
 height: 260px;
     display: flex;
    flex-direction: column;

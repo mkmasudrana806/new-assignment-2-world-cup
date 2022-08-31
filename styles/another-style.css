@@ -1,0 +1,168 @@
+/* Note: ("previows style") where written, that means i have copy the previous style properties( style.css ). so no need to check this properties after checking style.css file  */
+
+/* ("new style") means i am added new style for another html file  */
+/* ----------------------------------------------
+                  google font ( previows style)
+----------------------------------------------- */
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap');
+</style>
+
+/*--------------------------------------------
+        common styles or utilities ( previows style)
+----------------------------------------------*/
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;
+}
+
+/*--------------------------------------------------
+      common for main and header section width  ( previows style)
+---------------------------------------------------- */
+header,main{
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+/* ---------------------------------------------
+                  header sectoin ( previows style)
+---------------------------------------------  */
+.head-section{
+   background-color: black;
+   height: 550px;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   border-radius: 25px;
+}
+
+.title-container,.banner-container{
+    width: 500px;
+    height: 500px;
+    color: white;
+}
+.header-title h1{
+    font-weight: 700;
+    font-size: 70px;
+}
+.header-title button{
+    background-color: red;
+    color: white;
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+.banner-container .header-banner img{
+width: 100%;
+}
+
+/*---------------------------------------------
+                    main container  ( previows style)
+----------------------------------------------- */
+.container{
+    display: flex;
+    margin-bottom: 50px;
+}
+/* ------------------------------------------------
+            this is upcomming matche section ( previows style)
+--------------------------------------------------- */
+.upcomming-match{
+    background-color: black;
+    margin-right: 20px;
+    width: 260px;
+height: 260px;
+    display: flex;
+   flex-direction: column;
+ align-items: center;
+ border-radius: 10px;
+
+}
+.upcomming-match button{
+    width: 225px;
+    padding: 15px 0;
+    font-size:1.1em;
+    border-radius: 10px;
+
+}
+.upcomming-match  .blog-button{
+    background-color: red;
+color: white;
+}
+/* ----------------------------------------------------
+                  this is blogs section or live matches section ( new style for another html file)
+----------------------------------------------------- */
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+    flex-grow: calc(1);
+}
+.blog{
+    border: 1px solid #8080803b;
+    border-radius: 10px;
+    padding: 50px 30px;
+}
+.blog-banner{
+    display: flex;
+    justify-content: space-between;
+}
+.blog-banner img{
+   width: 40%;
+} 
+
+.blog-detail h3{
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+}
+.blog-detail p{
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #4D4D4D;
+}
+
+/* -------------------------------------------------
+                  footer section ( previows style)
+----------------------------------------------------- */
+
+.footer-section{
+    height: 444px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: 
+    #161616;
+}
+.footer-detail{
+    width: 1200px;
+}
+
+.footer-info{
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 16px;
+    color: #B9B9B9;
+}
+
+.footer-info div{
+    width: 900px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer-detail h1{
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 50px;
+}
+.footer-detail hr{
+    border: 1px solid #ffffff1a;
+    margin-bottom: 50px;
+}
