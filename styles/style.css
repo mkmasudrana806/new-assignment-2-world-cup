@@ -102,6 +102,9 @@ color: white;
    border: 1px solid #8080803b;
 border-radius: 10px;
 }
+.blog:hover{
+    transform: translateY(-20px);
+}
 .blog .blog-banner img{
     width: 100%;
 }
