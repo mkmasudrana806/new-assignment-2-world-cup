@@ -98,13 +98,17 @@ color: white;
     column-gap: 20px;
     flex-grow: calc(1);
 }
+
 .blog{
    border: 1px solid #8080803b;
 border-radius: 10px;
+transition: transform 0.9s ease;
 }
+
 .blog:hover{
     transform: translateY(-20px);
 }
+
 .blog .blog-banner img{
     width: 100%;
 }
