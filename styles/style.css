@@ -64,7 +64,7 @@ body{
 ----------------------------------------------- */
 .match-and-blogs-container{
     display: flex;
-    margin-bottom: 50px;
+    /* margin-bottom: 100px; */
 }
 /* ------------------------------------------------
             this is upcomming matche section
@@ -79,6 +79,7 @@ body{
     border-radius: 10px;
     padding:15px 7.5px;
 }
+
 .upcomming-match button{
     width: 90%;
     margin: 10px;
@@ -158,42 +159,43 @@ font-size: 20px;
 
 .footer-section{
     height: 444px;
+    background-color: #161616;
+    margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: 
-    #161616;
-    display: none;
-}
-.footer-detail{
-    width: 1200px;
 }
 
 .footer-info{
     display: flex;
     justify-content: center;
-    font-weight: 500;
-    font-size: 16px;
-    color: #B9B9B9;
 }
 
-.footer-info div{
-    width: 900px;
+.footer-detail .footer-info div{
+    width: 70%;
     display: flex;
     justify-content: space-evenly;
 }
+.footer-section .container{
+    margin-top: 10px;
+}
 .footer-detail h1{
-    text-align: center;
     font-weight: 600;
     font-size: 40px;
-    color: white;
-    margin-bottom: 50px;
+    line-height: 60px;
+    text-align: center;
+    color: #FFFFFF;
 }
 .footer-detail hr{
+    margin: 30px;
     border: 1px solid #ffffff1a;
-    margin-bottom: 50px;
 }
-
+.footer-detail p{
+font-weight: 500;
+font-size: 16px;
+color: #B9B9B9;
+padding: 0 5px;
+}
 /* ---------------------------------------------------
              media query for mobile view
 ---------------------------------------------------  */
@@ -221,7 +223,7 @@ font-size: 20px;
 
     .match-and-blogs-container{
       flex-direction: column;
-        margin-bottom: 50px;
+        margin-bottom:0px;
     }
     .upcomming-match{
         width: 100%;
@@ -238,6 +240,16 @@ font-size: 20px;
     margin-left: 0px;
 }
 
+/* responsive for footer section  */
+.footer-section{
+    height: max-content;
+    margin-top: 0;
+}
+.footer-detail .footer-info div{
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 30px;
+}
 }
 
 /* ---------------------------------------------------
@@ -265,7 +277,7 @@ font-size: 20px;
  /* responsive for upcomming matches and blogs  */
  .match-and-blogs-container{
    flex-direction: column;
-     /* margin-bottom: 50px; */
+     margin-bottom: 50px;
  }
  .upcomming-match{
      width: 100%;
@@ -286,6 +298,11 @@ font-size: 20px;
     display: block;
     display: flex;
     justify-content: center;
+}
+
+/* responsive for foooter section  */
+.footer-info div{
+   flex-wrap: wrap;
 }
 
 }
