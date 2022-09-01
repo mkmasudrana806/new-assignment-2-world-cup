@@ -97,11 +97,10 @@ body{
 .blogs{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    row-gap: 20px;
     column-gap: 20px;
+    row-gap: 20px;
     flex-grow: calc(1);
     margin-left: 20px;
-    /* display: none; */
 }
 
 .blog{
@@ -153,6 +152,52 @@ text-align: center;
 color: white;
 font-size: 20px;
 }
+
+/* ------------------------------
+      gets update section 
+------------------------------*/
+.subscribe-section h1{
+    text-align: center;
+    color: green;
+    font-weight: 900;
+    font-size: 50px;
+}
+.subscribe-box{
+  display: flex;
+  justify-content: center;
+}
+.outer-box{
+    width: 70%;
+    height: 200px;
+    background-color: rgb(243, 207, 160);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner-box{
+   width: max-content;
+    height: max-content;
+    background-color: 	#FFA07A;
+    padding: 15px;
+    display: flex;
+}
+.inner-box input[type="email"]{
+    padding: 15px;
+    width: 90%;
+    border: 0;
+    border-radius: 5px;
+ outline: none;
+}
+.inner-box input[type="submit"]{
+    padding: 14px;
+    width: 150px;
+    font-size: 15px;
+    font-weight: 700;
+    border: 0;
+    background-color: tomato;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
 /* -------------------------------------------------
                   footer section 
 ----------------------------------------------------- */
@@ -185,6 +230,7 @@ font-size: 20px;
     line-height: 60px;
     text-align: center;
     color: #FFFFFF;
+    margin-top: 0px;
 }
 .footer-detail hr{
     margin: 30px;
@@ -238,6 +284,15 @@ padding: 0 5px;
     grid-template-columns: repeat(1,1fr);
     margin-top: 50px;
     margin-left: 0px;
+}
+
+/* responsive for subscribe or gets update sectoin  */
+.outer-box{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.inner-box{
+    /* flex-direction: column; */
 }
 
 /* responsive for footer section  */
