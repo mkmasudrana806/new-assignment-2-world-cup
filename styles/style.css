@@ -27,7 +27,7 @@ body{
 .header-container{
     display: flex;
     justify-content: space-evenly;
-    background-color: #161616;
+    background-color: #008080;
     border-radius: 25px;
 }
 
@@ -70,7 +70,7 @@ body{
             this is upcomming matche section
 --------------------------------------------------- */
 .upcomming-match{
-    background-color: black;
+    background-color: #297416;
     width: 400px;
     height: max-content;
     display: flex;
@@ -79,6 +79,19 @@ body{
     border-radius: 10px;
     padding:15px 7.5px;
 }
+.upcomming-match .upcomming{
+    width: 77%;
+    text-decoration: none;
+    border: 1px solid #80808075;
+    margin: 10px;
+    padding: 14px;
+    font-weight: 500;
+    font-size:20px;
+    border-radius: 10px;
+    color: #161616;
+    background-color: white;
+   text-align: center;
+}
 
 .upcomming-match button{
     width: 90%;
@@ -86,6 +99,7 @@ body{
     padding: 15px;
     font-size:1.1em;
     border-radius: 10px;
+    border: 0;
 }
 .upcomming-match .blog-button{
     background-color: red;
@@ -106,6 +120,7 @@ body{
 .blog{
    border: 1px solid #8080803b;
 border-radius: 10px;
+background-color: #b6acac33;
 transition: transform 0.9s ease;
 }
 /* blog extra design with hover in transfrom and transiton */
@@ -204,7 +219,7 @@ font-size: 20px;
 
 .footer-section{
     height: 444px;
-    background-color: #161616;
+    background-color: black;
     margin-top: 100px;
     display: flex;
     justify-content: center;
@@ -275,6 +290,9 @@ padding: 0 5px;
     .upcomming-match{
         width: 100%;
         background-color: white;
+    }
+    .upcomming-match .upcomming{
+        width: 83%;
     }
     .upcomming-match button{
         border: 1px solid #B9B9B9;

@@ -32,7 +32,7 @@ body{
 .header-container{
     display: flex;
     justify-content: space-evenly;
-    background-color: #161616;
+    background-color: #008080;
     border-radius: 25px;
 }
 
@@ -71,7 +71,7 @@ body{
      this is upcomming matche section("previows style")
 ----------------------------------------------------------*/
 .upcomming-match{
-    background-color:black;
+    background-color: #297416;
     width: 270px;
     height: max-content;
     display: flex;
@@ -86,8 +86,9 @@ body{
     padding: 15px;
     font-size:1.1em;
     border-radius: 10px;
+    border:0;
 }
-.upcomming-match .blog-button{
+.upcomming-match .upcomming{
     background-color: red;
     color: white;
 }
@@ -107,6 +108,7 @@ body{
     border: 1px solid #8080803b;
     border-radius: 10px;
     padding: 50px 30px;
+    background-color: #f7e5d257;
     transition: transform 0.9s ease;
 }
 
