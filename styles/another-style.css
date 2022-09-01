@@ -135,46 +135,168 @@ body{
 }
 
 /* -------------------------------------------------
-          footer section ("previows style")
+                  footer section 
 ----------------------------------------------------- */
 
 .footer-section{
     height: 444px;
+    background-color: #161616;
+    margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: 
-    #161616;
-}
-.footer-detail{
-    width: 1200px;
 }
 
 .footer-info{
     display: flex;
     justify-content: center;
-    font-weight: 500;
-    font-size: 16px;
-    color: #B9B9B9;
 }
 
-.footer-info div{
-    width: 900px;
+.footer-detail .footer-info div{
+    width: 70%;
     display: flex;
     justify-content: space-evenly;
 }
+.footer-section .container{
+    margin-top: 10px;
+}
 .footer-detail h1{
-    text-align: center;
     font-weight: 600;
     font-size: 40px;
-    color: white;
-    margin-bottom: 50px;
+    line-height: 60px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 0px;
 }
 .footer-detail hr{
+    margin: 30px;
     border: 1px solid #ffffff1a;
-    margin-bottom: 50px;
+}
+.footer-detail p{
+font-weight: 500;
+font-size: 16px;
+color: #B9B9B9;
+padding: 0 5px;
 }
 
+
+
 /* ---------------------------------------------------
-     media query for mobile view 
+             media query for mobile view
 ---------------------------------------------------  */
+@media screen and (max-width:576px) {
+    /* responsive for header section  */
+    .container{
+     margin-top: 50px;
+    }
+     .header-container{
+         flex-direction: column;
+        padding: 20px 20px 0px 20px;
+     }
+     .title-container,.banner-container{
+         width: 100%;
+     }
+     .title-container h1{
+         font-size: 35px;
+     }
+ 
+     .banner-container img{
+         width: 90%;
+         height: 350px;
+     }
+     /* responsive for upcomming matches and blogs  */
+ 
+     .match-and-blogs-container{
+       flex-direction: column;
+         margin-bottom:0px;
+     }
+     .upcomming-match{
+         width: 100%;
+         background-color: white;
+     }
+     .upcomming-match button{
+         border: 1px solid #B9B9B9;
+         background-color: white;
+     }
+ 
+ .blogs{
+     grid-template-columns: repeat(1,1fr);
+     margin-top: 50px;
+     margin-left: 0px;
+ }
+ 
+ /* responsive for subscribe or gets update sectoin  */
+ .outer-box{
+     width: 100%;
+     margin-bottom: 50px;
+ }
+ .inner-box{
+     /* flex-direction: column; */
+ }
+ 
+ /* responsive for footer section  */
+ .footer-section{
+     height: max-content;
+     margin-top: 0;
+ }
+ .footer-detail .footer-info div{
+     flex-direction: column;
+     text-align: center;
+     margin-bottom: 30px;
+ }
+ }
+ 
+ /* ---------------------------------------------------
+              media query for tablet view
+ ---------------------------------------------------  */
+ @media screen and (min-width:576px) and (max-width:992px) {
+     /* responsive for header section  */
+ .container{
+  margin-top: 50px;
+  }
+  .header-container{
+     padding: 20px 20px 0px 20px;
+  }
+  .title-container,.banner-container{
+      width: 100%;
+  }
+  .title-container h1{
+      font-size: 40px;
+  }
+ 
+ .banner-container img{
+     height: 400px;
+ }
+ 
+  /* responsive for upcomming matches and blogs  */
+  .match-and-blogs-container{
+    flex-direction: column;
+      margin-bottom: 50px;
+  }
+  .upcomming-match{
+      width: 100%;
+      flex-direction: row;
+      background-color: white;
+  }
+  .upcomming-match button{
+      border: 1px solid #B9B9B9;
+      background-color: white;
+  }
+ 
+ .blogs{
+     grid-template-columns: repeat(2,1fr);
+     margin-top: 50px;
+     margin-left: 0px;
+ }
+ .view-all-button{
+     display: block;
+     display: flex;
+     justify-content: center;
+ }
+ 
+ /* responsive for foooter section  */
+ .footer-info div{
+    flex-wrap: wrap;
+ }
+ 
+ }
