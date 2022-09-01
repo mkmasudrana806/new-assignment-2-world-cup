@@ -50,6 +50,33 @@ body{
     border: none;
     color: white;
 }
+
+/*---------------------------------------------
+           watch live button animation added 
+           
+-----------------------------------------------*/
+@keyframes color-change {
+    0%{
+        /* background-color:red; */
+        color: white;
+    }
+    50%{
+        /* background-color: green; */
+        color: rgb(22, 181, 255);
+    }
+    75%{
+        /* background-color: brown; */
+        color: rgb(142, 243, 11);
+    }
+    100%{
+        /* background-color: chartreuse; */
+        color: rgb(14, 255, 195);
+    }
+}
+.header-container:hover button{
+    animation: color-change 2s ease infinite ;
+}
+
 .header-banner{
     width: 100%;
 }
@@ -392,5 +419,4 @@ padding: 0 5px;
 .footer-info div{
    flex-wrap: wrap;
 }
-
 }
