@@ -10,14 +10,13 @@
 ----------------------------------------------*/
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: #F3F1FF;
 }
 
 /*--------------------------------------------------
-      common for main and header section width 
+      common style for main,header,footer container
 ---------------------------------------------------- */
-header,main{
-    width: 1200px;
+.container{
+    width: 90%;
     margin: 0 auto;
     margin-top: 100px;
 }
@@ -25,41 +24,45 @@ header,main{
 /* ---------------------------------------------
                   header sectoin
 ---------------------------------------------  */
-.head-section{
-   background-color: black;
-   height: 550px;
-   display: flex;
-   justify-content: space-evenly;
-   align-items: center;
-   border-radius: 25px;
+.header-container{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #161616;
+    border-radius: 25px;
 }
 
 .title-container,.banner-container{
-    width: 500px;
-    height: 500px;
-    color: white;
+    width: 40%;
 }
-.header-title h1{
-    font-weight: 700;
+.title-container h1{
     font-size: 70px;
+    margin-top: 58px;
+    margin-bottom: 0px;
 }
-.header-title button{
-    background-color: red;
+.title-container{
     color: white;
+}
+.title-container button{
+    background-color: red;
     padding: 15px 30px;
     font-size: 20px;
     border-radius: 10px;
     border: none;
+    color: white;
 }
-
-.banner-container .header-banner img{
-width: 100%;
+.header-banner{
+    width: 100%;
+}
+.banner-container img{
+    width: 100%;
+    margin-top: 20px;
+    height: 500px;
 }
 
 /*---------------------------------------------
-                    main container
+                    upcomming mathch blogs  container
 ----------------------------------------------- */
-.container{
+.match-and-blogs-container{
     display: flex;
     margin-bottom: 50px;
 }
@@ -68,28 +71,27 @@ width: 100%;
 --------------------------------------------------- */
 .upcomming-match{
     background-color: black;
-    margin-right: 20px;
     width: 400px;
-height: 260px;
+    height: max-content;
     display: flex;
-   flex-direction: column;
- align-items: center;
- border-radius: 10px;
-
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    padding:15px 7.5px;
 }
 .upcomming-match button{
-    width: 225px;
-    padding: 15px 0;
+    width: 90%;
+    margin: 10px;
+    padding: 15px;
     font-size:1.1em;
     border-radius: 10px;
-
 }
-.upcomming-match  .blog-button{
+.upcomming-match .blog-button{
     background-color: red;
-color: white;
+    color: white;
 }
 /* ----------------------------------------------------
-  this is blogs section or different matches sectoihn 
+                 this is blogs section
 ----------------------------------------------------- */
 .blogs{
     display: grid;
@@ -97,6 +99,8 @@ color: white;
     row-gap: 20px;
     column-gap: 20px;
     flex-grow: calc(1);
+    margin-left: 20px;
+    /* display: none; */
 }
 
 .blog{
@@ -104,7 +108,7 @@ color: white;
 border-radius: 10px;
 transition: transform 0.9s ease;
 }
-
+/* blog extra design with hover in transfrom and transiton */
 .blog:hover{
     transform: translateY(-20px);
 }
@@ -136,7 +140,7 @@ transition: transform 0.9s ease;
     display: flex;
     justify-content: center;
     margin-bottom: 70px;
-    /* display: none; */
+    display: none;
 }
 .view-all-button a{
 width: 135px;
@@ -159,6 +163,7 @@ font-size: 20px;
     align-items: center;
     background-color: 
     #161616;
+    display: none;
 }
 .footer-detail{
     width: 1200px;
@@ -187,4 +192,100 @@ font-size: 20px;
 .footer-detail hr{
     border: 1px solid #ffffff1a;
     margin-bottom: 50px;
+}
+
+/* ---------------------------------------------------
+             media query for mobile view
+---------------------------------------------------  */
+@media screen and (max-width:576px) {
+   /* responsive for header section  */
+   .container{
+    margin-top: 50px;
+   }
+    .header-container{
+        flex-direction: column;
+       padding: 20px 20px 0px 20px;
+    }
+    .title-container,.banner-container{
+        width: 100%;
+    }
+    .title-container h1{
+        font-size: 35px;
+    }
+
+    .banner-container img{
+        width: 90%;
+        height: 350px;
+    }
+    /* responsive for upcomming matches and blogs  */
+
+    .match-and-blogs-container{
+      flex-direction: column;
+        margin-bottom: 50px;
+    }
+    .upcomming-match{
+        width: 100%;
+        background-color: white;
+    }
+    .upcomming-match button{
+        border: 1px solid #B9B9B9;
+        background-color: white;
+    }
+
+.blogs{
+    grid-template-columns: repeat(1,1fr);
+    margin-top: 50px;
+    margin-left: 0px;
+}
+
+}
+
+/* ---------------------------------------------------
+             media query for tablet view
+---------------------------------------------------  */
+@media screen and (min-width:576px) and (max-width:992px) {
+    /* responsive for header section  */
+.container{
+ margin-top: 50px;
+ }
+ .header-container{
+    padding: 20px 20px 0px 20px;
+ }
+ .title-container,.banner-container{
+     width: 100%;
+ }
+ .title-container h1{
+     font-size: 40px;
+ }
+
+.banner-container img{
+    height: 400px;
+}
+
+ /* responsive for upcomming matches and blogs  */
+ .match-and-blogs-container{
+   flex-direction: column;
+     /* margin-bottom: 50px; */
+ }
+ .upcomming-match{
+     width: 100%;
+     flex-direction: row;
+     background-color: white;
+ }
+ .upcomming-match button{
+     border: 1px solid #B9B9B9;
+     background-color: white;
+ }
+
+.blogs{
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 50px;
+    margin-left: 0px;
+}
+.view-all-button{
+    display: block;
+    display: flex;
+    justify-content: center;
+}
+
 }

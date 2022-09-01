@@ -1,98 +1,98 @@
-/* Note: ("previows style") where written, that means i have copy the previous style properties( style.css ). so no need to check this properties after checking style.css file  */
+/* Note: ("previows style") where written, that means i have copied the previous style properties( style.css ). so no need to check this properties after checking style.css file  */
 
 /* ("new style") means i am added new style for another html file  */
+
+
 /* ----------------------------------------------
-                  google font ( previows style)
+                  google font
 ----------------------------------------------- */
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap');
 </style>
 
 /*--------------------------------------------
-        common styles or utilities ( previows style)
+        common styles or utilities
 ----------------------------------------------*/
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: #F3F1FF;
 }
 
 /*--------------------------------------------------
-      common for main and header section width  ( previows style)
+      common style for main,header,footer container
 ---------------------------------------------------- */
-header,main{
-    width: 1200px;
+.container{
+    width: 90%;
     margin: 0 auto;
     margin-top: 100px;
 }
 
 /* ---------------------------------------------
-                  header sectoin ( previows style)
+        header sectoin("previows style")
 ---------------------------------------------  */
-.head-section{
-   background-color: black;
-   height: 550px;
-   display: flex;
-   justify-content: space-evenly;
-   align-items: center;
-   border-radius: 25px;
+.header-container{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #161616;
+    border-radius: 25px;
 }
 
 .title-container,.banner-container{
-    width: 500px;
-    height: 500px;
-    color: white;
+    width: 40%;
 }
-.header-title h1{
-    font-weight: 700;
+.title-container h1{
     font-size: 70px;
+    margin-top: 58px;
+    margin-bottom: 0px;
 }
-.header-title button{
-    background-color: red;
+.title-container{
     color: white;
+}
+.title-container button{
+    background-color: red;
     padding: 15px 30px;
     font-size: 20px;
     border-radius: 10px;
     border: none;
+    color: white;
+}
+.banner-container img{
+    width: 100%;
+   margin-top: 20px;
 }
 
-.banner-container .header-banner img{
-width: 100%;
-}
-
-/*---------------------------------------------
-                    main container  ( previows style)
------------------------------------------------ */
-.container{
+/*-------------------------------------------------------
+    upcomming mathch blogs  container("previows style")
+--------------------------------------------------------- */
+.match-and-blogs-container{
     display: flex;
     margin-bottom: 50px;
 }
-/* ------------------------------------------------
-            this is upcomming matche section ( previows style)
---------------------------------------------------- */
+/* -------------------------------------------------------
+     this is upcomming matche section("previows style")
+----------------------------------------------------------*/
 .upcomming-match{
-    background-color: black;
-    margin-right: 20px;
-    width: 260px;
-height: 260px;
+    background-color:black;
+    width: 270px;
+    height: max-content;
     display: flex;
-   flex-direction: column;
- align-items: center;
- border-radius: 10px;
-
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    padding:15px 7.5px;
 }
 .upcomming-match button{
-    width: 225px;
-    padding: 15px 0;
+    width: 90%;
+    margin: 10px;
+    padding: 15px;
     font-size:1.1em;
     border-radius: 10px;
-
 }
-.upcomming-match  .blog-button{
+.upcomming-match .blog-button{
     background-color: red;
-color: white;
+    color: white;
 }
 /* ----------------------------------------------------
-                  this is blogs section or live matches section ( new style for another html file)
+                  this is blogs section or live matches section ( css new style for another html file)
 ----------------------------------------------------- */
 .blogs{
     display: grid;
@@ -100,13 +100,21 @@ color: white;
     row-gap: 20px;
     column-gap: 20px;
     flex-grow: calc(1);
+    margin-left: 20px;
 }
+ 
 .blog{
     border: 1px solid #8080803b;
     border-radius: 10px;
     padding: 50px 30px;
+    transition: transform 0.9s ease;
 }
-.blog-banner{
+
+.blog:hover{
+    transform: translateY(-20px);
+}
+
+.blog .blog-banner{
     display: flex;
     justify-content: space-between;
 }
@@ -127,7 +135,7 @@ color: white;
 }
 
 /* -------------------------------------------------
-                  footer section ( previows style)
+          footer section ("previows style")
 ----------------------------------------------------- */
 
 .footer-section{
@@ -166,3 +174,7 @@ color: white;
     border: 1px solid #ffffff1a;
     margin-bottom: 50px;
 }
+
+/* ---------------------------------------------------
+     media query for mobile view 
+---------------------------------------------------  */
