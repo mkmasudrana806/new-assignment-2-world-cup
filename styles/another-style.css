@@ -181,7 +181,20 @@ color: #B9B9B9;
 padding: 0 5px;
 }
 
-
+/* social link  */
+.fa-brands{
+    font-size: 25px;
+    color: white;
+    padding: 0px 15px;
+}
+.social-link p,.social-link h3{
+    text-align: center;
+    color: white;
+}
+.social-font{
+    display: flex;
+    justify-content: center;
+}
 
 /* ---------------------------------------------------
              media query for mobile view
